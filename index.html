@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!--Header & Navigations-->
+  <header>
+    <div class="header-inner">
+      <button id="menu"><i class="fa-solid fa-bars"></i></button>
+
+      <div class="label-cont">
+        <h3 id="dev">cbsdan</h3>
+      </div>
+
+
+      <nav>
+        <ul>
+          <li data-tab-target="#home" class="tab">Home</li>
+          <li data-tab-target="#projects" class="tab active">Projects</li>
+          <li data-tab-target="#about" class="tab">About</li>
+        </ul>
+      </nav>
+
+      <!--Menu tab-->
+      <nav class="navMenu hidden">
+        <ul>
+          <li data-tab-target="#home" class="menu-tab">Home</li>
+          <li data-tab-target="#projects" class="menu-tab">Projects</li>
+          <li data-tab-target="#about" class="menu-tab active">About</li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!--Main & Tab Content-->
+  <main>
+    <!--HOME-->
+    <div id="home" data-tab-content>
+      <h3>Hello there!</h3>
+      <h2>I am Daniel Cabasa</h2>
+      <h4>a web developer</h4><br>
+      
+      <button id="project-btn" data-tab-target="#projects">Go to Projects</button>
+    </div>
+
+    <!--PROJECTS-->
+    <div id="projects" data-tab-content>
+      <h3 class="title">Projects:</h3>
+      <ul>
+        <li>
+          <a class="link"href="https://cbsdan.github.io/Projects-MovieApp" target="_blank">
+            Movie App
+          </a>
+        </li>
+
+        <li>
+          <a class="link"href="https://cbsdan.github.io/Projects-RecipeApp" target="_blank">
+            Recipe App
+          </a>
+        </li>
+        
+        <li>
+          <a class="link"href="https://cbsdan.github.io/Projects-NoteApp" target="_blank">
+            Note App
+          </a>
+        </li>
+
+        <li>
+          <a class="link"href="https://cbsdan.github.io/Projects-DrawingApp" target="_blank">
+            Drawing App
+          </a>
+        </li>
+        
+        <li>
+          <a class="link"href="https://cbsdan.github.io/cbsdan-youtube" target="_blank">
+            Youtube Clone
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--ABOUT-->
+    <div id="about" class="active" data-tab-content>
+      <h3 class="title">About</h3>
+      <p class="text">You can reach me here: </p>
+
+      <ul>
+        <li class="account">
+          <a class="link" href="https://www.facebook.com/daniel.cabasa.14" target="_blank">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+        </li>
+
+        <li class="account">
+          <a class="link" href="https://github.com/cbsdan" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </li>
+        
+        <li class="account">
+          <a class="link" href="mailto:cabasadaniel1@gmail.com">
+            <i class="fa-regular fa-envelope"></i> Gmail
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
